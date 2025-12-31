@@ -12,6 +12,8 @@ const App = () => {
     audioRef.current = new Audio("/music/mashup.mp3");
     audioRef.current.loop = true;
     audioRef.current.volume = 0.5;
+    //Want to play the audio from 1st minute of mp3
+    audioRef.current.currentTime = 312;
 
     return () => {
       if (audioRef.current) {
