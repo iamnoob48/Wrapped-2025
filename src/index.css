@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-midnight: #050505;   /* Pure Black background */
+  --color-starlight: #E5E7EB;  /* Soft White text */
+  --color-neon-blue: #00f3ff;  /* The "Blue Essence" - Bright Cyan */
+  --color-deep-blue: #1e3a8a;  /* Darker blue for backgrounds/cards */
+  --color-glass: rgba(255, 255, 255, 0.05); /* Glassmorphism effect */
+
+  /* Fonts */
+  --font-display: "Inter", sans-serif; /* Clean, modern font */
+  --font-hand: "Patrick Hand", cursive; /* Still nice for personal notes */
+  
+  /* Custom Animations */
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff; }
+    to { text-shadow: 0 0 20px #00f3ff, 0 0 30px #00f3ff; }
+  }
+}
+
+body {
+  @apply bg-midnight text-starlight font-display antialiased selection:bg-neon-blue selection:text-midnight;
+}
+
+/* Scrollbar styling for that premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 4px;
+}
+@theme inline {
+  --animate-meteor-effect: meteor 5s linear infinite;
+  
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+}
