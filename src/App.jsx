@@ -9,7 +9,7 @@ const App = () => {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    audioRef.current = new Audio("/music/billo_rani.mp3");
+    audioRef.current = new Audio("/music/mashup.mp3");
     audioRef.current.loop = true;
     audioRef.current.volume = 0.5;
 
