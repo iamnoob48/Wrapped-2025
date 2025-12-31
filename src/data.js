@@ -57,7 +57,7 @@ export const memories = [
       {
         id: 10,
         month: "OCTOBER",
-        text: "October month was a little bit difficult for me because a lot of fights are hapening regarding jeevan and mai kbhi peace pe aa nhi paaya so sorry i fought a lot regarding that i think this was also the month your internship was completed and dusherra bhi tha toh kaafi kuch hua iss mahina.",
+        text: "October month was a little bit difficult for me because a lot of fights were hapening mai kbhi peace pe aa nhi paaya so sorry i fought a lot regarding that i think this was also the month your internship was completed and dusherra bhi tha toh kaafi kuch hua iss mahina.",
         img : "/images/oct.png"
       },
       {
